@@ -1,47 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Tic Tac Toe</title>
 
-  <!-- custom stylesheet -->
-  <link href="css/tictactoe.css" rel="stylesheet" type="text/css" />
+<head>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <div class="container">
-    <div id="modal" class="modal">
-      <!-- Modal Content -->
-      <div class="modalContent">
-        <p>Play as X or O?</p>
-        <button>X</button>
-        <button>O</button>
-      </div>
-    </div>
-
-      <h1>Tic Tac Toe</h1>
-      <table class="board">
+  <section class="container">
+    <h1>Tic Tac Toe</h1>
+    <h3>Play as 
+      <button id="xButton" >X</button>
+      or 
+      <button id="oButton" >O</button>
+      ?
+      </h3>
+    <table class="board">
+      <tbody>
         <tr class="row1">
-          <td class="cell1"></td>
-          <td class="cell2"></td>
-          <td class="cell3"></td>
+          <td id="c1r1" class="cell1 field"></td>
+          <td id="c2r1" class="cell2 field"></td>
+          <td id="c3r1" class="cell3 field"></td>
         </tr>
         <tr class="row2">
-          <td class="cell1"></td>
-          <td class="cell2"></td>
-          <td class="cell3"></td>
+          <td id="c1r2" class="cell1 field"></td>
+          <td id="c2r2" class="cell2 field"></td>
+          <td id="c3r2" class="cell3 field"></td>
         </tr>
         <tr class="row3">
-          <td class="cell1"></td>
-          <td class="cell2"></td>
-          <td class="cell3"></td>
+          <td id="c1r3" class="cell1 field"></td>
+          <td id="c2r3" class="cell2 field"></td>
+          <td id="c3r3" class="cell3 field"></td>
         </tr>
-      </table>
-    </div>
-    
-    <!-- Scripts -->
-    
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
+      </tbody>
+    </table>
+    <h4>Score:
+      <br />
+        <p>Player: <span class="badge player">0</span>
+        <br />
+          Computer: <span class="badge computer">0</span>
+          <br />
+          Draw: <span class="badge draw">0</span>
+        </p>
+      </h4>
+  </section>
+  <footer>
+    <p class="copyright">Copyright © Jennifer Currie &amp; Illogical Artist 2015 - 2016. All Rights Reserved.</p>
+    <section id="socialMedia">
+          <a href="http://www.freecodecamp.com/renestl" target='_blank' role='button' class=''><i class='fa fa-fire'></i></a>
+          <a href="https://github.com/Renestl" target='_blank' role='button' class=''><i class='fa fa-github'></i></a>
+          <a href="http://codepen.io/renestl/" target='_blank' role='button' class=''><i class='fa fa-codepen'></i></a>
+          <a href="https://linkedin.com/pub/jennifer-currie-mba-rhia/5/975/5a8" target='_blank' role='button' class=''><i class='fa fa-linkedin'></i></a>
+        </section>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src='https://use.fontawesome.com/a99060d49a.js'></script>
+  <!-- Custom JS scripts -->
+  <script src="js/tictactoe.js"></script>
 </body>
 
 </html>
