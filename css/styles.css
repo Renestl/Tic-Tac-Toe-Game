@@ -2,7 +2,7 @@
 
 body {
   font-size: 16px;
-  margin-bottom: 300px;
+  /*margin-bottom: 150px;*/
   text-align: center;
 }
 
@@ -24,8 +24,9 @@ td {
   /* border: 1px #C4DFE6 solid; */
   color: #003B46;
   background-color: #66A5AD;
-  width: 15vw;
-  height: 15vw;
+  width: 100px;
+  height: 100px;
+  padding: 0;
 }
 
 .row1,
@@ -53,6 +54,10 @@ button {
   background-color: green;
 }
 
+.gameDraw {
+  background-color: red;
+}
+
 footer {
   background: #222;
   color: dimgrey;
@@ -60,4 +65,3 @@ footer {
   padding: 10px;
   font-size: 0.75em;
   font-family: Georgia, Times, sans-serif;
-}
